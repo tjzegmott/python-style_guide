@@ -55,18 +55,57 @@ Here you will to into practice the new skills that you have learnt. We hope that
 -->
 
 <details id=1>
-<summary><h2>Step 1: TBD-step-1-name</h2></summary>
+<summary><h2>Step 1: Adding documentation strings</h2></summary>
 
 _Welcome to "python-style_guide"! :wave:_
 
-TBD-step-1-information
+<!-- TBD-step-1-information -->
+For the first step, lets add documentation strings to each of the functions defined in `hello-numbers.py`. Use the onboarding webpage to help you a short summary for each functions their parameters and returns.
 
-**What is _TBD-term-1_**: TBD-definition-1
+**What is _documentation string_**: A documentation string (docstring) is a string that describes a module, function, class, or method definition.
 
-### :keyboard: Activity: TBD-step-1-name
+``` python
+def bar(var1: list, var2: int, var3: str = "hi", *args, **kwargs):
+    """Short summary of the code
+
+     Several sentences providing an extended description. Refer to
+     variables using back-ticks, e.g. `var`.
+
+     Parameters
+     ----------
+     var1 : array_like
+         Array_like means all those objects -- lists, nested lists, etc. --
+         that can be converted to an array.  We can also refer to
+         variables like `var1`.
+     var2 : int
+         The type above can either refer to an actual Python type
+         (e.g. ``int``), or describe the type of the variable in more
+         detail, e.g. ``(N,) ndarray`` or ``array_like``.
+     var3: {'hi', 'ho'}, optional
+         Choices in brackets, default first when optional.
+     *args : iterable
+         Other arguments.
+     **kwargs : dict
+         Keyword arguments.
+
+     Returns
+     -------
+     describe : type
+         Explanation of return value named `describe`.
+     out : type
+         Explanation of `out`.
+    """
+```
+### :keyboard: Activity: Writing docstrings
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. TBD-step-1-instructions.
+1. Open the file `hello-numbers.py`.
+1. Write a short docstring for the following functions:
+    1. `HelloWorld`
+    1. `SqrNumber`
+    1. `SqrtNumber`
+    1. `main`
+1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -81,7 +120,7 @@ TBD-step-1-information
 <details id=2>
 <summary><h2>Step 2: TBD-step-2-name</h2></summary>
 
-_You did TBD-step-1-name! :tada:_
+_You did Adding documentation strings! :tada:_
 
 TBD-step-2-information
 
