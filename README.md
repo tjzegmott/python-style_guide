@@ -146,17 +146,29 @@ Packages and modules that are imported should always appear at the top of the fi
 -->
 
 <details id=3>
-<summary><h2>Step 3: TBD-step-3-name</h2></summary>
+<summary><h2>Step 3: Applying naming conventions</h2></summary>
 
-_Nice work finishing TBD-step-2-name :sparkles:_
+_Nice work finishing Fixing import statements :sparkles:_
 
-TBD-step-3-information
+<!-- TBD-step-3-information -->
+When naming anything, the names that are given should be descriptive and meaningful. Avoid the use of throwaway names such as "temp". The styling should also follow the convention below:
 
-**What is _TBD-term-3_**: TBD-definition-3
+  - `package_name`
+  - `module_name`
+  - `ClassName`
+  - `method_name`
+  - `ExceptionName`
+  - `function_name`
+  - `CONSTANT_NAME`
+  - `var_name`
+  - `function_parameter_name`
+  - `local_var_name`
 
-### :keyboard: Activity: TBD-step-3-name
+### :keyboard: Activity: Applying naming conventions
 
-1. TBD-step-3-instructions.
+1. Reopen the file `hello-numbers.py`.
+1. Apply the information above to all variable and function names.
+1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -171,7 +183,7 @@ TBD-step-3-information
 <details id=4>
 <summary><h2>Step 4: TBD-step-4-name</h2></summary>
 
-_Nicely done TBD-step-3-name! :partying_face:_
+_Nicely done Applying naming conventions! :partying_face:_
 
 TBD-step-4-information
 
