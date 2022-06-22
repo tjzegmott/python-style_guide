@@ -99,14 +99,17 @@ def bar(var1: list, var2: int, var3: str = "hi", *args, **kwargs):
 ### :keyboard: Activity: Writing docstrings
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Open the file `hello_numbers.py`.
+1. Click on the **Pull requests** tab.
+1. Select the pull request "_Start learning python styling_".
+1. Click the tab **Files changed**.
+1. For the file `hello_numbers.py`, click on the three dots, then select **Edit file**.
 1. Write a short docstring for the following functions:
     1. `HelloWorld`
     1. `SqrNumber`
     1. `SqrtNumber`
     1. `main`
 1. Click **Commit changes**.
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Return to the main page of the repository. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
