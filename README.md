@@ -118,17 +118,22 @@ def bar(var1: list, var2: int, var3: str = "hi", *args, **kwargs):
 -->
 
 <details id=2>
-<summary><h2>Step 2: TBD-step-2-name</h2></summary>
+<summary><h2>Step 2: Fixing import statements</h2></summary>
 
 _You did Adding documentation strings! :tada:_
 
-TBD-step-2-information
+<!-- TBD-step-2-information -->
+Packages and modules that are imported should always appear at the top of the file after any module comments or docstrings, but before constants. Only one package or module should be imported per line; multiple functions from a single package can be imported on one line though. Imports should be grouped in the following order:
 
-**What is _TBD-term-2_**: TBD-definition-2
+1. Standard library imports.
+1. Related third party imports.
+1. Local application or library specific imports.
 
-### :keyboard: Activity: TBD-step-2-name
+### :keyboard: Activity: Fixing import statements
 
-1. TBD-step-2-instructions.
+1. Reopen the file `hello-numbers.py`.
+1. Move the import statements within the file into the correct order.
+1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
