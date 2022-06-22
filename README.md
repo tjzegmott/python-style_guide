@@ -215,9 +215,48 @@ def something(self, first_var: int):
 -->
 
 <details id=5>
-<summary><h2>Step 5: Merge your pull request</h2></summary>
+<summary><h2>Step 5: Writing tests for the functions</h2></summary>
 
-_Almost there Adding type hinting to code! :heart:_
+_Sick work Applying naming conventions! :fireworks:_
+
+**What is _test_**: A test is what it sounds like, a test. Tests can be written to check for any errors in the code.
+
+<!-- TBD-step-5-information -->
+The simplest type of test is an assertion, this is where we assert that something is true. An example of a test with an assertion is:
+
+``` python
+# Content of simple test
+def func(x):
+    return x + 1
+
+def test_func(x):
+    assert func(3) == 4
+```
+
+### :keyboard: Activity: Writing tests for the functions
+
+1. Reopen the file `tests/test_hello-numbers.py`.
+1. Using what you have learnt about tests, write a simple test for each function:
+    1. `HelloWorld`
+    1. `SqrNumber`
+    1. `SqrtNumber`
+    1. `main`
+1. Click **Commit changes**.
+1. Wait about 20 seconds then refresh this page for the next step.
+
+</details>
+
+<!--
+  <<< Author notes: Step 6 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+  TBD-step-6-notes.
+-->
+
+<details id=6>
+<summary><h2>Step 6: Merge your pull request</h2></summary>
+
+_Almost there Writing tests for the functions! :heart:_
 
 You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
@@ -234,7 +273,7 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
   Review what we learned, ask for feedback, provide next steps.
 -->
 
-<details id=X>
+<details id=7>
 <summary><h2>Finish</h2></summary>
 
 _Congratulations friend, you've completed this course!_
@@ -243,15 +282,19 @@ _Congratulations friend, you've completed this course!_
 
 Here's a recap of all the tasks you've accomplished in your repository:
 
-- TBD-recap.
+- Wrote docstrings describing the functions.
+- Fixed the placement and order of the import statements.
+- Corrected the styling of the variable and function names.
+- Type hinted the code.
+- Created tests.
 
 ### What's next?
 
 - TBD-continue.
-- [We'd love to hear what you thought of this course](TBD-feedback-link).
-- [Take another TBD-organization Course](https://github.com/TBD-organization).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+<!-- - [We'd love to hear what you thought of this course](TBD-feedback-link). -->
+<!-- - [Take another TBD-organization Course](https://github.com/TBD-organization). -->
+<!-- - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started). -->
+<!-- - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore). -->
 
 </details>
 
@@ -262,6 +305,6 @@ Here's a recap of all the tasks you've accomplished in your repository:
 
 ---
 
-Get help: [TBD-support](TBD-support-link) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+<!-- Get help: [TBD-support](TBD-support-link) &bull; [Review the GitHub status page](https://www.githubstatus.com/) -->
 
-&copy; 2022 TBD-copyright-holder &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
+&copy; 2022 CHIME/FRB Collaboration &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [CC-BY-4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
