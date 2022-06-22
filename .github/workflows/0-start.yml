@@ -38,7 +38,41 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches
 
-      # TBD-course-set-up
+      # Make a branch, file, commit, and pull request for the learner
+      - name: Prepare a pull request, branch, and file
+        run: |
+          echo "Make sure we are on step 0"
+          if [ "$(cat .github/script/STEP)" != 0 ]
+          then
+            echo "Current step is not 0"
+            exit 0
+          fi
+
+          echo "Make a branch"
+          BRANCH=start-markdown
+          git checkout -b $BRANCH
+
+          echo "Make a file"
+          touch tests/test_hello_numbers.py
+          echo "import hello_numbers" >> tests/test_hello_numbers.py
+
+          echo "Make a commit"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add tests/test_hello_numbers.py
+          git commit --message="Create tests/test_hello_numbers.py file"
+          
+          echo "Push"
+          git push --set-upstream origin $BRANCH
+
+          echo "Make a pull request"
+          # Reference https://cli.github.com/manual/gh_pr_create
+          gh pr create --title "Start learning markdown" --body "Start learning markdown"
+
+          echo "Restore main"
+          git checkout main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Update README to close <details id=0> and open <details id=1>
       # and set STEP to '1'
