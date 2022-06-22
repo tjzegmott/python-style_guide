@@ -181,17 +181,28 @@ When naming anything, the names that are given should be descriptive and meaning
 -->
 
 <details id=4>
-<summary><h2>Step 4: TBD-step-4-name</h2></summary>
+<summary><h2>Step 4: Adding type hinting to code</h2></summary>
 
 _Nicely done Applying naming conventions! :partying_face:_
 
-TBD-step-4-information
+**What is _type hint_**: A type hint, or type annotation, is a way to indicate the type that a variable expects or that a function returns.
 
-**What is _TBD-term-4_**: TBD-definition-4
+<!-- TBD-step-4-information -->
+Type hinting can help to make code easier to understand and help to avoid TypeErrors. It can also be picked up by hooks such as `mypy` to spot errors in code.
 
-### :keyboard: Activity: TBD-step-4-name
+``` python
+def another(thing: str) -> str:
+    return thing
 
-1. TBD-step-4-instructions.
+def something(self, first_var: int):
+    pass
+```
+
+### :keyboard: Activity: Adding type hinting to code
+
+1. Reopen the file `hello-numbers.py`.
+1. Add type hints to all the variables and functions in the file.
+1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -206,7 +217,7 @@ TBD-step-4-information
 <details id=5>
 <summary><h2>Step 5: Merge your pull request</h2></summary>
 
-_Almost there TBD-step-4-name! :heart:_
+_Almost there Adding type hinting to code! :heart:_
 
 You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
