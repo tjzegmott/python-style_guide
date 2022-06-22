@@ -60,7 +60,7 @@ Here you will to into practice the new skills that you have learnt. We hope that
 _Welcome to "python-style_guide"! :wave:_
 
 <!-- TBD-step-1-information -->
-For the first step, lets add documentation strings to each of the functions defined in `hello-numbers.py`. Use the onboarding webpage to help you a short summary for each functions their parameters and returns.
+For the first step, lets add documentation strings to each of the functions defined in `hello_numbers.py`. Use the onboarding webpage to help you a short summary for each functions their parameters and returns.
 
 **What is _documentation string_**: A documentation string (docstring) is a string that describes a module, function, class, or method definition.
 
@@ -99,7 +99,7 @@ def bar(var1: list, var2: int, var3: str = "hi", *args, **kwargs):
 ### :keyboard: Activity: Writing docstrings
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Open the file `hello-numbers.py`.
+1. Open the file `hello_numbers.py`.
 1. Write a short docstring for the following functions:
     1. `HelloWorld`
     1. `SqrNumber`
@@ -131,7 +131,7 @@ Packages and modules that are imported should always appear at the top of the fi
 
 ### :keyboard: Activity: Fixing import statements
 
-1. Reopen the file `hello-numbers.py`.
+1. Reopen the file `hello_numbers.py`.
 1. Move the import statements within the file into the correct order.
 1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
@@ -166,7 +166,7 @@ When naming anything, the names that are given should be descriptive and meaning
 
 ### :keyboard: Activity: Applying naming conventions
 
-1. Reopen the file `hello-numbers.py`.
+1. Reopen the file `hello_numbers.py`.
 1. Apply the information above to all variable and function names.
 1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
@@ -200,7 +200,7 @@ def something(self, first_var: int):
 
 ### :keyboard: Activity: Adding type hinting to code
 
-1. Reopen the file `hello-numbers.py`.
+1. Reopen the file `hello_numbers.py`.
 1. Add type hints to all the variables and functions in the file.
 1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
@@ -235,7 +235,7 @@ def test_func(x):
 
 ### :keyboard: Activity: Writing tests for the functions
 
-1. Reopen the file `tests/test_hello-numbers.py`.
+1. Reopen the file `tests/test_hello_numbers.py`.
 1. Using what you have learnt about tests, write a simple test for each function:
     1. `HelloWorld`
     1. `SqrNumber`
