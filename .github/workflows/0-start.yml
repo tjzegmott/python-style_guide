@@ -17,6 +17,7 @@ permissions:
   # Need `contents: read` to checkout the repository
   # Need `contents: write` to update the step metadata
   contents: write
+  pull-requests: write
 
 jobs:
   on_start:
@@ -49,25 +50,24 @@ jobs:
           fi
 
           echo "Make a branch"
-          BRANCH=start-markdown
+          BRANCH=start-python
           git checkout -b $BRANCH
 
-          echo "Make a file"
-          touch tests/test_hello_numbers.py
-          echo "import hello_numbers" >> tests/test_hello_numbers.py
+          echo "Edit a file"
+          echo "" >> hello_numbers.py
 
           echo "Make a commit"
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add tests/test_hello_numbers.py
-          git commit --message="Create tests/test_hello_numbers.py file"
+          git add hello_numbers.py
+          git commit --message="Edit test_hello_numbers.py file"
           
           echo "Push"
           git push --set-upstream origin $BRANCH
 
           echo "Make a pull request"
           # Reference https://cli.github.com/manual/gh_pr_create
-          gh pr create --title "Start learning markdown" --body "Start learning markdown"
+          gh pr create --title "Start learning python styling" --body "Start learning python styling"
 
           echo "Restore main"
           git checkout main
@@ -82,4 +82,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 0
           to_step: 1
-          branch_name: tbd-branch-name
+          branch_name: start-python
