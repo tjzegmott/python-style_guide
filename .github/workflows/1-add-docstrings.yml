@@ -38,11 +38,13 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-1-additional-steps
-      - name: Check hello_numbers.py, docstrings
-        run: ./.github/scripts/check-file.sh
-        env:
-          FILE: "hello_numbers.py"
-          SEARCH: "\"\"\""
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+          -name: Check for docstrings
+          run: |
+            python scripts/check-docstings.py
 
       # Update README to close <details id=1> and open <details id=2>
       # and set STEP to '2'
