@@ -1,4 +1,4 @@
-name: Step 1, TBD-step-1-name
+name: Step 1, Adding docstrings
 
 # This step triggers after TBD-step-1-event-desc
 # This step sets STEP to 2
@@ -8,8 +8,9 @@ name: Step 1, TBD-step-1-name
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  TBD-step-1-event:
-
+  push:
+    branches:
+      - start-python
 # Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
   # Need `contents: read` to checkout the repository
@@ -17,8 +18,8 @@ permissions:
   contents: write
 
 jobs:
-  on_TBD-step-1-event:
-    name: On TBD-step-1-event
+  on_add_docstrings:
+    name: On commit, start-python, add docstrings
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
@@ -37,6 +38,11 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-1-additional-steps
+      - name: Check hello_numbers.py, docstrings
+        run: ./.github/scripts/check-file.sh
+        env:
+          FILE: "hello_numbers.py"
+          SEARCH: "\"\"\""
 
       # Update README to close <details id=1> and open <details id=2>
       # and set STEP to '2'
