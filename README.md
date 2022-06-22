@@ -7,9 +7,9 @@
   Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
 -->
 
-# TBD-course-name
+# python-style_guide
 
-_TBD-course-description_
+In this guide, you will learn how to style your python code to comply with our guidelines. Using what you have learnt from reading the 'Guidelines when using Python' page of the Onboarding repository, you will complete several tasks here to help you absorb the skills.
 
 <!--
   <<< Author notes: Start of the course >>>
@@ -22,12 +22,15 @@ _TBD-course-description_
 
 <!--step0-->
 
-TBD-welcome-paragraph
+<!-- TBD-welcome-paragraph -->
+Welcome to the collaboration! :partying_face:
 
-- **Who is this for**: TBD-audience.
-- **What you'll learn**: TBD-objective.
-- **What you'll build**: TBD-result.
-- **Prerequisites**: TBD-prerequisites.
+Here you will to into practice the new skills that you have learnt. We hope that this is a useful experience for you and welcome any feedback that you may have.
+
+- **Who is this for**: New members to our collaboration.
+- **What you'll learn**: How to document, style, and test python code.
+- **What you'll build**: A repository that complies with our style requirements.
+- **Prerequisites**: Basic knowledge of python.
 - **How long**: This course is TBD-step-count steps long and takes less than TBD-duration to complete.
 
 ## How to start this course
@@ -54,7 +57,7 @@ TBD-welcome-paragraph
 <details id=1>
 <summary><h2>Step 1: TBD-step-1-name</h2></summary>
 
-_Welcome to "TBD-course-name"! :wave:_
+_Welcome to "python-style_guide"! :wave:_
 
 TBD-step-1-information
 
