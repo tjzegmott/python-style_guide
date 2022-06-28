@@ -41,7 +41,7 @@ jobs:
       # TBD-step-2-additional-steps
       - name: Check import statements
         run: |
-          bash scripts/check-import.sh
+          bash .github/script/check-import.sh
 
       # Update README to close <details id=2> and open <details id=3>
       # and set STEP to '3'

@@ -39,7 +39,7 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-4-additional-steps
-      - name: Setup Python
+      - name: Setup python
         uses: actions/setup-python@v2
         run: |
           pip install mypy

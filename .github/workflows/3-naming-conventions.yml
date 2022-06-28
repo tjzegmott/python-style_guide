@@ -41,7 +41,7 @@ jobs:
       # TBD-step-3-additional-steps
       - name: Check variable and function names
         run: |
-          bash scripts/check-naming.sh
+          bash .github/script/check-naming.sh
 
       # Update README to close <details id=3> and open <details id=4>
       # and set STEP to '4'
