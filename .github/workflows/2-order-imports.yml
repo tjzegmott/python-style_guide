@@ -39,7 +39,6 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-2-additional-steps
-      # TODO: Need a way to check import statements
       - name: Check import statements
         run: |
           bash scripts/check-import.sh
