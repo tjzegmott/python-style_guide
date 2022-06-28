@@ -58,3 +58,15 @@ jobs:
           from_step: 4
           to_step: 5
           branch_name: start-python
+
+      - name: Prepare a file
+        run: |
+          echo "Make sure we are on step 5"
+          if [ "$(cat .github/script/STEP)" != 5 ]; then
+            echo "Current step is not 5"
+            exit 0
+          else
+            echo "Make a file"
+            touch tests/test_hello_numbers.py
+            echo "import hello_numbers" >> tests/test_hello_numbers.py
+          fi
