@@ -243,7 +243,6 @@ def test_func(x):
     1. `HelloWorld`
     1. `SqrNumber`
     1. `SqrtNumber`
-    1. `main`
 1. Click **Commit changes**.
 1. Wait about 20 seconds then refresh this page for the next step.
 

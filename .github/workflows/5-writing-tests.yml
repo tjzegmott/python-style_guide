@@ -39,18 +39,16 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-5-additional-steps
-      - name: Prepare a file
+      - name: Setup python
+        uses: actions/setup-python@v2
+
+      - name: Setup pytest
         run: |
-          echo "Make sure we are on step 5"
-          if [ "$(cat .github/script/STEP)" != 5 ]
-          then
-            echo "Current step is not 5"
-            exit 0
-          fi
-          # TODO: Move this to step before tests, don't forget to include the Commit part
-          # echo "Make a file"
-          # touch tests/test_hello_numbers.py
-          # echo "import hello_numbers" >> tests/test_hello_numbers.py
+          pip install pytest
+
+      - name: Run the tests
+        run: |
+          pytest
 
 
       # Update README to close <details id=5> and open <details id=5>
