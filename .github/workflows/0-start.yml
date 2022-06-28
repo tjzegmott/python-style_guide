@@ -60,7 +60,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add hello_numbers.py
-          git commit --message="Edit test_hello_numbers.py file"
+          git commit --message="Edit hello_numbers.py file"
           
           echo "Push"
           git push --set-upstream origin $BRANCH
