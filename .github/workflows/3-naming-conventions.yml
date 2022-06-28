@@ -39,7 +39,9 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-3-additional-steps
-      # TODO: Check that all variable names follow convention.
+      - name: Check variable and function names
+        run: |
+          bash scripts/check-naming.sh
 
       # Update README to close <details id=3> and open <details id=4>
       # and set STEP to '4'
