@@ -1,14 +1,16 @@
-name: Step 4, TBD-step-4-name
+name: Step 3, Naming conventions
 
-# This step triggers after TBD-step-4-event-desc
-# This step sets STEP to 5
-# This step closes <details id=4> and opens <details id=5>
+# This step triggers after TBD-step-3-event-desc
+# This step sets STEP to 4
+# This step closes <details id=3> and opens <details id=4>
 
-# This will run every time we TBD-step-4-event-desc
+# This will run every time we TBD-step-3-event-desc
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  TBD-step-4-event:
+  push:
+    branches:
+      - start-python
 
 # Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -17,8 +19,8 @@ permissions:
   contents: write
 
 jobs:
-  on_TBD-step-4-event:
-    name: On TBD-step-4-event
+  on_naming_conventions:
+    name: On commit, start-python, naming conventions
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
@@ -36,14 +38,15 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches
 
-      # TBD-step-4-additional-steps
+      # TBD-step-3-additional-steps
+      # TODO: Check that all variable names follow convention.
 
-      # Update README to close <details id=4> and open <details id=5>
-      # and set STEP to '5'
-      - name: Update to step 5
+      # Update README to close <details id=3> and open <details id=4>
+      # and set STEP to '4'
+      - name: Update to step 4
         uses: skills/action-update-step@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 4
-          to_step: 5
-          branch_name: tbd-branch-name
+          from_step: 3
+          to_step: 4
+          branch_name: start-python

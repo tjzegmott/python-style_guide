@@ -1,4 +1,4 @@
-name: Step 5, TBD-step-5-name
+name: Step 5, Writing tests
 
 # This step triggers after TBD-step-5-event-desc
 # This step sets STEP to 5
@@ -8,7 +8,9 @@ name: Step 5, TBD-step-5-name
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  TBD-step-5-event:
+  push:
+    branches:
+      - start-python
 
 # Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -17,8 +19,8 @@ permissions:
   contents: write
 
 jobs:
-  on_TBD-step-5-event:
-    name: On TBD-step-5-event
+  on_write_tests:
+    name: On commit, start-python, write tests
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
@@ -37,6 +39,19 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-5-additional-steps
+      - name: Prepare a file
+        run: |
+          echo "Make sure we are on step 5"
+          if [ "$(cat .github/script/STEP)" != 5 ]
+          then
+            echo "Current step is not 5"
+            exit 0
+          fi
+          # TODO: Move this to step before tests, don't forget to include the Commit part
+          # echo "Make a file"
+          # touch tests/test_hello_numbers.py
+          # echo "import hello_numbers" >> tests/test_hello_numbers.py
+
 
       # Update README to close <details id=5> and open <details id=5>
       # and set STEP to '5'
@@ -45,5 +60,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 5
-          to_step: 5
-          branch_name: tbd-branch-name
+          to_step: 6
+          branch_name: start-python
