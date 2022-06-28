@@ -39,7 +39,6 @@ jobs:
           fetch-depth: 0 # Let's get all the branches
 
       # TBD-step-4-additional-steps
-      # TODO: Make sure all variables and functions are type hinted
       - name: Setup Python
         uses: actions/setup-python@v2
         run: |
