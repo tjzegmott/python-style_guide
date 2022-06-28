@@ -1,8 +1,8 @@
-name: Step 5, Merge your pull request
+name: Step 6, Merge your pull request
 
 # This step triggers after a pull requst is merged to `main`
 # This step sets STEP to X
-# This step closes <details id=5> and opens <details id=X>
+# This step closes <details id=6> and opens <details id=X>
 
 # This will run every time we create push a commit to `main`
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
@@ -39,12 +39,12 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches
 
-      # Update README to close <details id=5> and open <details id=X>
+      # Update README to close <details id=6> and open <details id=X>
       # and set STEP to 'X'
-      - name: Update to step X
+      - name: Update to step 7
         uses: skills/action-update-step@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 5
-          to_step: X
+          from_step: 6
+          to_step: 7
           branch_name: tbd-branch-name
