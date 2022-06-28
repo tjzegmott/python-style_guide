@@ -14,10 +14,10 @@ import numpy as np
 def SqrtNumber(x):
     return np.sqrt(x)
 
-def main():
+def main() -> None:
     NAME = input("What is your name:\n")
     HelloWorld(NAME)
-    NUm = input("Pick a number:\n")
+    NUm = int(input("Pick a number:\n"))
     ran = np.random.rand()
     if ran >= 0.5:
         print(f"Did you know, the square of {NUm} is {SqrNumber(NUm)}")

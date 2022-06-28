@@ -40,6 +40,15 @@ jobs:
 
       # TBD-step-4-additional-steps
       # TODO: Make sure all variables and functions are type hinted
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        run: |
+          pip install mypy
+
+      - name: Check for type hinting
+        run: |
+          mypy --disallow-untyped-defs hello_numbers.py
+
 
       # Update README to close <details id=4> and open <details id=5>
       # and set STEP to '5'
